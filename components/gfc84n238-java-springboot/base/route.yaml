@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: gfc84n238-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: gfc84n238-java-springboot 
+  name: gfc84n238-java-springboot
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: gfc84n238-java-springboot
+    weight: 100 

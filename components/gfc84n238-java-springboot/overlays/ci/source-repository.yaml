@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: gfc84n238-java-springboot-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/gfc84n238-java-springboot
